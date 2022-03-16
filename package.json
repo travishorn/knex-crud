@@ -1,0 +1,27 @@
+{
+  "name": "knex-crud",
+  "version": "0.1.0",
+  "description": "",
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js",
+    "migrate:latest": "knex migrate:latest",
+    "seed:run": "knex seed:run"
+  },
+  "keywords": [],
+  "author": "Travis Horn <travis@travishorn.com> (https://travishorn.com/)",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.5.0",
+    "fastify": "^3.27.4",
+    "knex": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
